@@ -1,0 +1,1 @@
+from .remoteMultiCommand import remoteMultiCommand

@@ -1,5 +1,5 @@
-.. image:: https://readthedocs.org/projects/remoteMultiCommand/badge/?version=master
-   :target: http://remoteMultiCommand.readthedocs.io/en/latest/?badge=master
+.. image:: https://readthedocs.org/projects/remotemulticommand/badge/?version=master
+   :target: http://remotemulticommand.readthedocs.io/en/master/?badge=master
    :alt: Documentation Status
 
 .. image:: https://coveralls.io/repos/github/jonDel/remoteMultiCommand/badge.svg?branch=master

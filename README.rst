@@ -1,3 +1,19 @@
+.. image:: https://readthedocs.org/projects/remoteMultiCommand/badge/?version=master
+   :target: http://remoteMultiCommand.readthedocs.io/en/latest/?badge=master
+   :alt: Documentation Status
+
+.. image:: https://coveralls.io/repos/github/jonDel/remoteMultiCommand/badge.svg?branch=master
+   :target: https://coveralls.io/github/jonDel/remoteMultiCommand?branch=master
+
+.. image:: https://landscape.io/github/jonDel/remoteMultiCommand/master/landscape.svg?style=flat
+    :target: https://landscape.io/github/jonDel/remoteMultiCommand/master
+    :alt: Code Health
+
+.. image:: https://www.versioneye.com/user/projects/5821e46a89f0a91dbb44b40f/badge.svg?style=flat-square
+    :target: https://www.versioneye.com/user/projects/5821e46a89f0a91dbb44b40f
+    :alt: depend
+
+
 remoteMultiCommand
 ==================
 
@@ -79,7 +95,7 @@ remoteMultiCommand is compatible with Python 2.6+
 Documentation
 -------------
 
-https://remoteMultiCommand.readthedocs.io/en/latest/index.html
+https://remoteMultiCommand.readthedocs.io
 
 Source Code
 -----------

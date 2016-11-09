@@ -9,9 +9,8 @@
     :target: https://landscape.io/github/jonDel/remoteMultiCommand/master
     :alt: Code Health
 
-.. image:: https://www.versioneye.com/user/projects/5821e46a89f0a91dbb44b40f/badge.svg?style=flat-square
-    :target: https://www.versioneye.com/user/projects/5821e46a89f0a91dbb44b40f
-    :alt: depend
+.. image:: https://www.versioneye.com/user/projects/582340127a72950047198059/badge.svg?style=flat
+    :target: https://www.versioneye.com/user/projects/582340127a72950047198059
 
 
 remoteMultiCommand

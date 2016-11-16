@@ -28,7 +28,7 @@ Executing a list of commands in multiple servers in parallel
   >>> cmdsList = ['hostname','whoami']
   >>> rmCmd = remoteMultiCommand('/tmp/sshkey')
   Log: Changing log level to ERROR | Log level:ERROR | Date:01/11/2016 16:40:10
-  >>> rmCmd.setLogLevel('DEBUG')
+  >>> rmCmd.set_log_level('DEBUG')
   Log: Changing log level to DEBUG | Log level:DEBUG | Date:01/11/2016 16:40:12
   >>> serversList = ['serverOne', 'serverTwo', 'serverThree', 'serverFour']
   >>> rmCmd.launchListOfCommands(cmdsList, numOfProcess, serversList, sshLogLevel='DEBUG')

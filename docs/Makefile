@@ -50,7 +50,7 @@ clean:
 
 .PHONY: rst
 rst:
-	sphinx-apidoc -f -o source ../remoteMultiCommand
+	sphinx-apidoc -f -o source ../remote_multicommand
 
 .PHONY: html
 html:
@@ -95,9 +95,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/remoteMultiCommand.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/remote_multicommand.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/remoteMultiCommand.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/remote_multicommand.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -114,8 +114,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/remoteMultiCommand"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/remoteMultiCommand"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/remote_multicommand"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/remote_multicommand"
 	@echo "# devhelp"
 
 .PHONY: epub

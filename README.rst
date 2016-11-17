@@ -1,22 +1,22 @@
-.. image:: https://readthedocs.org/projects/remotemulticommand/badge/?version=master
-   :target: http://remotemulticommand.readthedocs.io/en/master/?badge=master
+.. image:: https://readthedocs.org/projects/remote_multicommand/badge/?version=master
+   :target: http://remote_multicommand.readthedocs.io/en/master/?badge=master
    :alt: Documentation Status
 
-.. image:: https://coveralls.io/repos/github/jonDel/remoteMultiCommand/badge.svg?branch=master
-   :target: https://coveralls.io/github/jonDel/remoteMultiCommand?branch=master
+.. image:: https://coveralls.io/repos/github/jonDel/remote_multicommand/badge.svg?branch=master
+   :target: https://coveralls.io/github/jonDel/remote_multicommand?branch=master
 
-.. image:: https://landscape.io/github/jonDel/remoteMultiCommand/master/landscape.svg?style=flat
-    :target: https://landscape.io/github/jonDel/remoteMultiCommand/master
+.. image:: https://landscape.io/github/jonDel/remote_multicommand/master/landscape.svg?style=flat
+    :target: https://landscape.io/github/jonDel/remote_multicommand/master
     :alt: Code Health
 
-.. image:: https://www.versioneye.com/user/projects/582340127a72950047198059/badge.svg?style=flat
-    :target: https://www.versioneye.com/user/projects/582340127a72950047198059
+.. image:: https://www.versioneye.com/user/projects/582ddf73c8dd3300448f9e81/badge.svg?style=flat
+    :target: https://www.versioneye.com/user/projects/582ddf73c8dd3300448f9e81
 
 
-remoteMultiCommand
-==================
+remote_multicommand
+===================
 
-**remoteMultiCommand** provides execution of multiple commands in multiple servers in parallel (multiple processes)
+**remote_multicommand** provides execution of multiple commands in multiple servers in parallel (multiple processes)
 
 
 Executing a list of commands in multiple servers in parallel
@@ -24,9 +24,9 @@ Executing a list of commands in multiple servers in parallel
 
 .. code:: python
 
-  >>> from remoteMultiCommand import remoteMultiCommand
+  >>> from remote_multicommand import remote_multicommand
   >>> cmdsList = ['hostname','whoami']
-  >>> rmCmd = remoteMultiCommand('/tmp/sshkey')
+  >>> rmCmd = remote_multicommand('/tmp/sshkey')
   Log: Changing log level to ERROR | Log level:ERROR | Date:01/11/2016 16:40:10
   >>> rmCmd.set_log_level('DEBUG')
   Log: Changing log level to DEBUG | Log level:DEBUG | Date:01/11/2016 16:40:12
@@ -83,25 +83,25 @@ Executing a list of commands in multiple servers in parallel
 Installation
 ------------
 
-To install remoteMultiCommand, simply run:
+To install remote_multicommand, simply run:
 
 ::
 
-  $ pip install remoteMultiCommand
+  $ pip install remote_multicommand
 
-remoteMultiCommand is compatible with Python 2.6+
+remote_multicommand is compatible with Python 2.6+
 
 Documentation
 -------------
 
-https://remoteMultiCommand.readthedocs.io
+https://remote_multicommand.readthedocs.io
 
 Source Code
 -----------
 
 Feel free to fork, evaluate and contribute to this project.
 
-Source: https://github.com/jonDel/remoteMultiCommand
+Source: https://github.com/jonDel/remote_multicommand
 
 License
 -------

@@ -1,15 +1,15 @@
-Welcome to remoteMultiCommand's documentation
-=============================================
+Welcome to remote_multicommand's documentation
+==============================================
 
 .. include:: ../../README.rst
 
-remoteMultiCommand package contents:
-====================================
+remote_multicommand package contents:
+=====================================
 
 .. toctree::
    :maxdepth: 2
-   
-   remoteMultiCommand
+
+   remote_multicommand
 
 Indices and tables
 ==================

@@ -2,10 +2,10 @@ from setuptools import setup
 
 setup(
     name='remote_multicommand',
-    version='0.1.2',
+    version='0.1.3',
     author='Jonatan Dellagostin',
     author_email='jdellagostin@gmail.com',
-    url='https://github.com/jonDel/remoteMultiCommand',
+    url='https://github.com/jonDel/remote_multicommand',
     packages=['remote_multicommand'],
     license='GPLv3',
     description='Provides execution of multiple commands in multiple servers in parallel (multiple processes)',

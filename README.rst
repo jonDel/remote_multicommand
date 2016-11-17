@@ -25,13 +25,13 @@ Executing a list of commands in multiple servers in parallel
 .. code:: python
 
   >>> from remote_multicommand import RemoteMultiCommand
-  >>> cmdsList = ['hostname','whoami']
-  >>> rmCmd = RemoteMultiCommand('/tmp/sshkey')
+  >>> cmds_list = ['hostname','whoami']
+  >>> rm_cmd = RemoteMultiCommand('/tmp/sshkey')
   Log: Changing log level to ERROR | Log level:ERROR | Date:01/11/2016 16:40:10
-  >>> rmCmd.set_log_level('DEBUG')
+  >>> rm_cmd.set_log_level('DEBUG')
   Log: Changing log level to DEBUG | Log level:DEBUG | Date:01/11/2016 16:40:12
-  >>> serversList = ['serverOne', 'serverTwo', 'serverThree', 'serverFour']
-  >>> rmCmd.launchListOfCommands(cmdsList, numOfProcess, serversList, sshLogLevel='DEBUG')
+  >>> servers_list = ['serverOne', 'serverTwo', 'serverThree', 'serverFour']
+  >>> rm_cmd.launch_list_of_commands(cmds_list, num_of_process, servers_list, ssh_log_level='DEBUG')
   Log: Executing 2 commands in the list of servers: | Log level:INFO | Date:01/11/2016 16:40:27
   Log: Processing in the 4 servers will be done in 1 iterations. | Log level:INFO |
     # Date:01/11/2016 16:40:27

@@ -179,6 +179,6 @@ class RemoteMultiCommand(Loggers):
             log_message = log_message+'\n - Number of commands bypassed: '\
                          +str(len(cmds_list) - len(result_dict))
             self.log.info(log_message)
-        self.log.info("It took "+str(round(time.time()-start, 3))+" seconds to execute the list \
-                      of commands in all "+str(num_of_servers)+" servers.")
+        self.log.info("It took "+str(round(time.time()-start, 3))+" seconds to execute the list"\
+                      " of commands in all "+str(num_of_servers)+" servers.")
         return self.servers_cmd_dict

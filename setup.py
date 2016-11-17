@@ -1,12 +1,12 @@
 from setuptools import setup
 
 setup(
-    name='remoteMultiCommand',
+    name='remote_multicommand',
     version='0.1.2',
     author='Jonatan Dellagostin',
     author_email='jdellagostin@gmail.com',
     url='https://github.com/jonDel/remoteMultiCommand',
-    packages=['remoteMultiCommand'],
+    packages=['remote_multicommand'],
     license='GPLv3',
     description='Provides execution of multiple commands in multiple servers in parallel (multiple processes)',
     long_description=open('README.rst').read(),
@@ -23,7 +23,7 @@ setup(
     keywords='ssh secure multi multi-processing parallel multiprocessing shell remote paramiko',
     install_requires=[
         "paramiko<=1.17.2",
-        "sshParamiko",
+        "ssh_paramiko",
         "pathos",
     ],
 )

@@ -3,7 +3,7 @@ from collections import OrderedDict
 from copy import copy
 from loggers import Loggers
 from pathos.multiprocessing import ProcessingPool as Pool
-from ssh_paramiko import ssh_paramiko
+from ssh_paramiko import RemoteServer
 
 class RemoteMultiCommand(Loggers):
     '''Execute commands in parallel in remote servers
@@ -12,15 +12,15 @@ class RemoteMultiCommand(Loggers):
         with multiple processes in parallel
 
     Arguments:
-        keySSH(:obj:`str`): path of the ssh private key to connect (must be None if using user
+        key_ssh(:obj:`str`): path of the ssh private key to connect (must be None if using user
             and pasword to connect)
-        logFolder(:obj:`str`, **optional** , *default* =None): folder where the log files of
+        log_folder(:obj:`str`, **optional** , *default* =None): folder where the log files of
             this class will be generated
         username(:obj:`str`, *optional* , *default* =root):  username using the connection
         password(:obj:`str`,optional, *default* =None):  password for connection if using user
             and password instead of key
-        sshPort(:obj:`str`, optional, *default* =22):  ssh tcp port
-        serverHasDns(:obj:`bool`, optional, *default* =True): if the server is not registered
+        ssh_port(:obj:`str`, optional, *default* =22):  ssh tcp port
+        server_has_dns(:obj:`bool`, optional, *default* =True): if the server is not registered
             in a DNS domain and/or has not its DNS name equals to its hostname, this flag must
             de set to False, otherwise this condition will be checked to certify we are trully
             connected to the right server.
@@ -32,11 +32,11 @@ class RemoteMultiCommand(Loggers):
         self.servers_cmd_dict = {}
         self.ssh_log_level = 'ERROR'
         self.ssh_opt_args = kwargs
-        self.ssh = ssh_paramiko.RemoteServer(self.ssh_key_path, **self.ssh_opt_args)
+        self.ssh = RemoteServer(self.ssh_key_path, **self.ssh_opt_args)
         self.ssh.set_log_level(self.ssh_log_level)
         if 'logFolder' in kwargs:
             super(RemoteMultiCommand, self).__init__('RemoteMultiCommand',
-                                                     logFolder=kwargs['logFolder'])
+                                                     log_folder=kwargs['log_folder'])
         else:
             super(RemoteMultiCommand, self).__init__('RemoteMultiCommand')
 
@@ -69,7 +69,7 @@ class RemoteMultiCommand(Loggers):
             std = output_msg
             if not output_msg == 'Host is not registered in DNS domain':
                 # Need to reinstantiate the class in this cases
-                self.ssh = ssh_paramiko.RemoteServer(self.ssh_key_path, **self.ssh_opt_args)
+                self.ssh = RemoteServer(self.ssh_key_path, **self.ssh_opt_args)
                 self.ssh.set_log_level(self.ssh_log_level)
                 self.log.error('Cannot connect to server '+server+' :'+output_msg)
         cmd_dict = OrderedDict()
